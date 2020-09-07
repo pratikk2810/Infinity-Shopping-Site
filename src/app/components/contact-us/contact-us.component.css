@@ -1,0 +1,50 @@
+.content
+{
+    margin-top:80px;
+    border:1px solid black;
+    padding:10px;
+   height: 480px;
+}
+.upper .left
+{
+    margin-left: 180px;
+    float: left;
+}
+.upper .right
+{
+    margin-right: 200px;
+    float:right;
+}
+.bagimg
+{
+    height:50px;
+    width:50px;
+    margin-left: 250px;
+}
+.txt
+{
+    font-size: 16px;
+    
+}
+.orders
+{
+    padding-right: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    border-color: #1976d2;
+    background-color: white;
+    border-radius:6px;
+    padding:5px;
+}
+.lower
+{
+    padding-top: 10px;
+    margin-left: 180px;
+}
+.lower .left
+{
+    width:250px;
+}
+b{
+    font-size: 22px;
+}

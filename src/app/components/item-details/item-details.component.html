@@ -1,0 +1,13 @@
+<div class="content">
+        <div class="card">
+            <img class="image" src="http://127.0.0.1:8000/{{filteredItem.itemImage}}"/>
+            <div class="details"><h3> {{filteredItem?.itemName}}</h3><br>
+            <b>Available: </b>{{filteredItem?.itemQuantity}}<br>
+            <b>Price: </b>Rs.{{filteredItem?.itemPrice}}<br>
+            <b>Rating: </b>{{filteredItem?.itemRating}}<br>
+            <b>Emi Available: </b>{{filteredItem?.emiAvailable}}<br>
+            <b>Description: </b>{{filteredItem?.itemDescription}}<br><br>
+            <button class="addCart" (click)="addToCart(filteredItem.id)">Add to Cart</button>
+        </div>
+    </div>
+</div>

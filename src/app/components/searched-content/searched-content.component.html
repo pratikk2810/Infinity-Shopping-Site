@@ -1,0 +1,15 @@
+<div class="content">
+    <h3 class="title">Shop Here</h3>
+    <div *ngIf="itemList!=null" else noContent>
+    <div  class="card" *ngFor="let item of itemList">
+        
+        <!--<img class="image" src={{item.itemImage}}/>-->
+        <div class="details">
+            <a [routerLink]="['/item-details', item.id]"><h4>{{item.itemName}}</h4></a>
+            <b>Price: </b>{{item.itemPrice}}<br>
+            <b>Rating: </b>{{item.itemRating}}<br>
+        </div>
+    </div>
+    </div>
+    <div class="noContent" #noContent>No Result</div>
+</div>

@@ -1,0 +1,73 @@
+.toolbar 
+{ 
+  position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:60px;
+    background-color: #1976d2;
+    color: white;
+}
+  .searchimg
+  {
+    position: absolute;
+    margin-left: 865px;
+    margin-top:10px;
+    background-color: white;
+    width:50px;
+    height:40px;
+    border-radius: 6px;
+  }
+  .infinityLogo
+  {
+    position: absolute;
+    margin-top: 10px;
+    margin-left:90px;
+    width:50px;
+    height:38px;
+    border-radius: 6px;
+  }
+  .cartlogo
+  {
+    position: absolute;
+    margin-left: 950px;
+    margin-top:10px;
+    width:50px;
+    height:40px;
+    border-radius: 6px;
+  }
+  .contactUs
+  {
+      position: absolute;
+      margin-left: 1010px;
+      margin-top:10px;
+      width:50px;
+      height:40px;
+      border-radius: 6px;
+      background-color: white;
+  }
+  input[type=text] {
+    position: absolute;
+    margin-left: 150px;
+    width: 50%;
+    padding: 12px 20px;
+    margin-bottom: 800px;
+    border: none;
+    border-radius: 4px;
+    margin-top:10px;
+  }
+  input[type=text]:focus {
+    border: none;
+  }
+.footer
+{ 
+  position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:40px;
+    padding-top:15px;
+    text-align: center;
+    background-color: #1976d2;
+    color: white;
+}

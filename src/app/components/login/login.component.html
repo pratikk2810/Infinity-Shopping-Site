@@ -1,0 +1,30 @@
+<h1 style="text-align:center">
+    Login
+  </h1>
+  <div class="login">
+    <h2 class="login-header">Log in</h2>
+    <form [formGroup]="loginForm" class="login-container" (ngSubmit)="onSubmit()">
+  
+      <p [ngClass]="{ 'has-error': isSubmitted && f.email.errors }">
+        <input type="email" placeholder="LoginId" formControlName="email" [ngClass]="{ 'is-invalid': f.email.touched && f.email.errors }">
+      </p>
+  
+      <div *ngIf="f.email.touched && f.email.errors" class="alert alert-danger" class="help-block">
+        <div *ngIf="f.email.errors.required">User Id is required</div>
+        <div *ngIf="f.email.errors.email">User Id must be a valid email address</div>
+    </div>
+
+      <p [ngClass]="{ 'has-error': isSubmitted && f.password.errors }">
+        <input type="password" placeholder="Password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': f.password.touched && f.password.errors }">
+      </p>
+  
+      <div *ngIf="f.password.touched && f.password.errors" class="invalid-feedback">
+        <div *ngIf="f.password.errors.required">Password is required</div>
+        <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+    </div>
+  
+      <p>
+        <input type="submit" value="Log in">
+      </p>
+    </form>
+  </div>

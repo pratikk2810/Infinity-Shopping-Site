@@ -1,0 +1,14 @@
+<div class="toolbar" >
+  <a routerLink="/home">
+    <img class="logo"
+    class="infinityLogo"
+    alt="Infinity Logo"
+    src="assets/logo.jpg"/>
+  </a>
+  <input type="text" #searchedtx placeholder="Search for products, brands and more"/>
+  <img class="searchimg" src="assets/search.png" (click)="getText(searchedtx.value)"/>
+  <a routerLink="/cart"><img class="cartlogo" src="assets/cartlogo.png"/></a>
+  <a routerLink="/contactUs"><img class="contactUs" src="assets/bagCart.png"/></a>
+</div>
+<router-outlet></router-outlet>
+<div class="footer"> &copy;CopyRight. &reg;All rights reserved 2020.</div>

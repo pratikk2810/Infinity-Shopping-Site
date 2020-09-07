@@ -1,0 +1,13 @@
+<div class="content">
+    <h3 class="title">Your Cart</h3>
+    <div *ngFor="let item of cartItems" class="card">
+        <img class="image" src="http://127.0.0.1:8000/{{item.itemImage}}"/>
+        <div class="details"><h3>{{item.itemName}}</h3>
+        <b>Available: </b>{{item.itemQuantity}}<br>
+        <b>Price: </b>Rs.{{item.itemPrice}}<br>
+        <b>Rating: </b>{{item.itemRating}}<br>
+        <b>Emi Available: </b>{{item.emiAvailable}}<br>
+        <b>Description: </b>{{item.itemDescription}}
+    </div>
+</div>
+</div>
